@@ -6,6 +6,11 @@
 /* -------------------------Google Fonts End------------------------- */
 
 /* -------------------------Global Rules Start------------------------- */
+:root {
+    --white-color:#fff;
+    --body-color: #080808;
+}
+
 *, *::before, *::after {
     margin: 0;
     padding: 0;
@@ -14,6 +19,7 @@
 }
 
 body {
+    background-color: var(--body-color);
     font-family: 'Poppins', sans-serif;
     font-size: 16px;
 }
