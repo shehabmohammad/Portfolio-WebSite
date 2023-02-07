@@ -8,8 +8,9 @@
 /* -------------------------Global Rules Start------------------------- */
 :root {
     --main-color:#ff004f;
-    --white-color:#fff;
     --body-color: #080808;
+    --white-color:#fff;
+    --txt-color: #ababab;
 }
 
 *, *::before, *::after {
@@ -38,6 +39,10 @@ ul li {
     margin: 0 auto;
     padding: 0 15px;
     border: 1px solid black;
+}
+
+.section-padding {
+    padding: 80px 0;
 }
 /* -------------------------Global Rules End------------------------- */
 
@@ -106,3 +111,88 @@ ul li {
     color: var(--main-color);
 }
 /* -------------------------Header End------------------------- */
+
+
+/* -------------------------About Section Start------------------------- */
+#about .wrapper {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+#about .about-img {
+    width: 35%;
+}
+
+#about .about-img .user-img {
+    display: block;
+    width: 100%;
+    border-radius: 15px;
+}
+
+#about .about-content {
+    width: 60%;
+    color: var(--txt-color);
+}
+
+#about .about-content h2 {
+    font-size: 60px;
+    font-weight: 600;
+    color: var(--white-color);
+    letter-spacing: 1.7px;
+    text-transform: capitalize;
+}
+
+#about .about-content p {
+    line-height: 26px;
+}
+
+#about .about-content .about-tab-titles {
+    display: flex;
+    margin: 20px 0 40px;
+}
+
+#about .about-content .about-tab-titles .tab-links {
+    text-transform: capitalize;
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+    position: relative;
+    transition: .4s linear;
+}
+
+#about .about-content .about-tab-titles .tab-links::after {
+    position: absolute;
+    content: '';
+    width: 0;
+    height: 3px;
+    left: 0;
+    bottom: -7px;
+    background-color: #b54769;
+}
+
+#about .about-content .about-tab-titles .tab-links.active::after {
+    width: 60%;
+}
+
+#about .about-content .about-tab-titles .tab-links:not(:last-child) {
+    margin-right: 50px;
+}
+
+#about .about-content .tab-contents ul li {
+    margin: 10px 0;
+}
+
+#about .about-content .tab-contents ul li span {
+    font-size: 14px;
+    font-weight: 500;
+    color: #b54769;
+}
+
+#about .about-content .tab-contents {
+    display: none;
+}
+#about .about-content .tab-contents.active {
+    display: block;
+}
+/* -------------------------About Section End------------------------- */
