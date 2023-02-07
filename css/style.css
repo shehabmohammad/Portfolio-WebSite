@@ -158,7 +158,6 @@ ul li {
     font-weight: 500;
     cursor: pointer;
     position: relative;
-    transition: .4s linear;
 }
 
 #about .about-content .about-tab-titles .tab-links::after {
@@ -169,6 +168,7 @@ ul li {
     left: 0;
     bottom: -7px;
     background-color: #b54769;
+    transition: .4s linear;
 }
 
 #about .about-content .about-tab-titles .tab-links.active::after {
