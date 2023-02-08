@@ -44,6 +44,14 @@ ul li {
 .section-padding {
     padding: 80px 0;
 }
+
+.section-title {
+    font-size: 60px;
+    font-weight: 600;
+    color: var(--white-color);
+    letter-spacing: 1.7px;
+    text-transform: capitalize;
+}
 /* -------------------------Global Rules End------------------------- */
 
 /* -------------------------Header Start------------------------- */
@@ -135,14 +143,6 @@ ul li {
     color: var(--txt-color);
 }
 
-#about .about-content h2 {
-    font-size: 60px;
-    font-weight: 600;
-    color: var(--white-color);
-    letter-spacing: 1.7px;
-    text-transform: capitalize;
-}
-
 #about .about-content p {
     line-height: 26px;
 }
@@ -199,11 +199,6 @@ ul li {
 
 /* -------------------------Services Section Start------------------------- */
 #services .service-title {
-    font-size: 60px;
-    font-weight: 600;
-    color: var(--white-color);
-    letter-spacing: 1.7px;
-    text-transform: capitalize;
     text-align: center;
     margin-bottom: 50px;
 }
@@ -252,3 +247,91 @@ ul li {
     transform: translateY(-10px);
 }
 /* -------------------------Services Section End------------------------- */
+
+/* -------------------------Portfolio Section Start------------------------- */
+#portfolio .portfolio-title {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+#portfolio .work-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 40px;
+}
+
+#portfolio .work-list .work {
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+}
+
+#portfolio .work-list .work img {
+    width: 100%;
+    display: block;
+    border-radius: 10px;
+    transition: .4s linear;
+}
+
+#portfolio .work-list .work .portfolio-layer {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 0;
+    background: linear-gradient(rgba(0, 0, 0, .6), var(--main-color));
+    color: var(--white-color);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0 40px;
+    text-align: center;
+    overflow: hidden;
+    transition: .4s linear;
+}
+
+#portfolio .work-list .work .portfolio-layer h3 {
+    text-transform: capitalize;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+#portfolio .work-list .work .portfolio-layer p {
+    font-size: 14px;
+    line-height: 22px;
+    margin-bottom: 20px;
+}
+#portfolio .work-list .work .portfolio-layer a {
+    font-size: 18px;
+    color: var(--main-color);
+    background: white;
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
+    border-radius: 50%;
+}
+
+#portfolio .work-list .work:hover img {
+    transform: scale(1.1);
+}
+
+#portfolio .work-list .work:hover .portfolio-layer {
+    height: 100%;
+    overflow: visible;
+}
+
+#portfolio .portfolio-btn {
+    display: block;
+    margin: 50px auto 0;
+    color: var(--white-color);
+    width: fit-content;
+    padding: 10px 30px;
+    border: 1px solid var(--main-color);
+    border-radius: 6px;
+    transition: .4s linear;
+}
+#portfolio .portfolio-btn:hover {
+    background-color: var(--main-color);
+}
+/* -------------------------Portfolio Section End------------------------- */
