@@ -335,3 +335,99 @@ ul li {
     background-color: var(--main-color);
 }
 /* -------------------------Portfolio Section End------------------------- */
+
+/* -------------------------Contact Section Start------------------------- */
+#contact .contact-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+#contact .contact-wrapper .contact-l {
+    width: 35%;
+}
+#contact .contact-wrapper .contact-r {
+    width: 60%;
+}
+
+#contact .contact-wrapper .contact-l p {
+    margin: 30px 0;
+    color: var(--txt-color);
+}
+
+#contact .contact-wrapper .contact-l p i {
+    color: var(--main-color);
+    margin-right: 10px;
+    display: inline-block;
+}
+
+#contact .contact-wrapper .contact-l .social-icons i {
+    display: inline-block;
+    margin-right: 20px;
+    font-size: 25px;
+    color: var(--txt-color);
+    transition: .4s linear;
+}
+#contact .contact-wrapper .contact-l .social-icons i:hover {
+    color: var(--main-color);
+    transform: translateY(-5px);
+}
+
+#contact .contact-wrapper .contact-l .contact-cv {
+    display: block;
+    margin-top: 30px;
+    color: var(--white-color);
+    width: fit-content;
+    padding: 10px 30px;
+    border: 1px solid var(--main-color);
+    border-radius: 6px;
+    font-size: 14px;
+    font-weight: 600;
+    transition: .4s linear;
+}
+#contact .contact-wrapper .contact-l .contact-cv:hover {
+    background-color: var(--main-color);
+}
+
+#contact .contact-wrapper .contact-r form {
+    width: 100%;
+}
+
+#contact .contact-wrapper .contact-r form input,
+#contact .contact-wrapper .contact-r form textarea {
+    width: 100%;
+    border: 0;
+    outline: none;
+    background-color: #262626;
+    display: block;
+    padding: 15px;
+    margin-bottom: 20px;
+    border-radius: 6px;
+    resize: none;
+    color: var(--white-color);
+}
+::placeholder {
+    color: var(--white-color);
+    font-size: 12px;
+    letter-spacing: 1.5px;
+}
+
+#contact .contact-wrapper .contact-r form button {
+    display: block;
+    color: var(--white-color);
+    width: fit-content;
+    padding: 10px 30px;
+    border: 1px solid var(--main-color);
+    border-radius: 6px;
+    font-size: 14px;
+    font-weight: 600;
+    background-color: transparent;
+    transition: .4s linear;
+    cursor: pointer;
+    text-transform: capitalize;
+}
+#contact .contact-wrapper .contact-r form button:hover {
+    background-color: var(--main-color) !important;
+}
+/* -------------------------Contact Section End------------------------- */
