@@ -20,6 +20,10 @@
     outline: none;
 }
 
+html {
+    scroll-behavior: smooth;    
+}
+
 body {
     background-color: var(--body-color);
     font-family: 'Poppins', sans-serif;
@@ -38,7 +42,6 @@ ul li {
     width: 90%;
     margin: 0 auto;
     padding: 0 15px;
-    border: 1px solid black;
 }
 
 .section-padding {
@@ -66,6 +69,7 @@ ul li {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    color: var(--txt-color);
 }
 
 #header nav .logo {
@@ -431,3 +435,147 @@ ul li {
     background-color: var(--main-color) !important;
 }
 /* -------------------------Contact Section End------------------------- */
+
+/* -------------------------Footer Start------------------------- */
+footer {
+    padding-bottom: 30px;
+    color: var(--white-color);
+}
+
+footer p {
+    text-align: center;
+    letter-spacing: 1.5px;
+}
+footer p span,
+footer p i {
+    color: var(--main-color);
+    text-transform: capitalize;
+}
+/* -------------------------Footer End------------------------- */
+
+/* -------------------------Scrolling To Top Button Start------------------------- */
+button#scroll {
+    border: none;
+    background-color: var(--main-color);
+    display: block;
+    position: fixed;
+    right: 25px;
+    bottom: 25px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    line-height: 40px;
+    text-align: center;
+    color: var(--white-color);
+    cursor: pointer;
+    font-size: 19px;
+    font-weight: 900;
+    z-index: 10;
+    display: none;
+}
+/* -------------------------Scrolling To Top Button End------------------------- */
+
+/* -------------------------Media Query Start------------------------- */
+/* Small Screens Start */
+nav .fas {
+    display: none;
+}
+@media screen and (max-width: 600px) {
+    #header {
+        background: url(../images/phone-background.png);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    #header nav .logo {
+        width: 100px;
+    }
+    #header .header-txt {
+        margin-top: 100%;
+        font-size: 16px;
+    }
+    #header .header-txt h1 {
+        font-size: 30px;
+    }
+    nav .fas {
+        display: block;
+        font-size: 25px;
+        cursor: pointer;
+        position: absolute;
+        top: 25px;
+        color: var(--white-color);
+        right: 25px;
+    }
+    #header nav ul {
+        width: 200px;
+        height: 100vh;
+        background-color: var(--main-color);
+        position: fixed;
+        top: 0;
+        right: -200px;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: nowrap;
+        z-index: 2;
+        transition: .4s linear;
+    }
+    #header nav ul li {
+        margin: 0 !important;
+        padding: 20px 0 !important;
+    }
+    nav .fa-times {
+        right: unset;
+    }
+
+    /* -------------------------------------------------------- */
+
+    .section-title {
+        font-size: 35px;
+    }
+    .section-padding {
+        padding: 40px 0;
+    }
+    #about .wrapper {
+        flex-direction: column;
+    }
+    #about .about-img,
+    #about .about-content {
+        width: 100%;
+    }
+    #about .about-content p {
+        font-size: 14px;
+        line-height: 20px;
+    }
+    #about .about-content .about-tab-titles .tab-links:not(:last-child) {
+        margin-right: 20px;
+    }
+    #about .about-content .about-tab-titles .tab-links,
+    #about .about-content .tab-contents ul li {
+        font-size: 16px;
+    }
+    #contact .contact-wrapper {
+        flex-direction: column;
+    }
+    #contact .contact-wrapper .contact-l,
+    #contact .contact-wrapper .contact-r {
+        width: 100%;
+    }
+    #contact .contact-wrapper .contact-l {
+        margin-bottom: 25px;
+    }
+    footer .container {
+        width: 100%;
+        padding: 0 5px !important;
+    }
+    footer p {
+        font-size: 14px;
+        letter-spacing: normal;
+    }
+    button#scroll {
+        border: 1px solid #000;
+    }
+}
+/* Small Screens End */
+
+/* -------------------------Media Query End------------------------- */
